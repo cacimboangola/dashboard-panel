@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <!--MATERIAL ICONS-->
+        <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+        <!--GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!--StyleSheet-->
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+
+        <nav>
+            <div class="container">
+                <img src="./images/logo.png" alt="CACIMBO" class="logo">
+                <div class="search-bar">
+                    <span class="material-icons-sharp">search</span>
+                    <input type="search" name="" id="" placeholder="Pesquisar">
+                </div>
+                <div class="profile-area">
+                    <div class="theme-btn">
+                        <span class="material-icons-sharp active">light_mode</span>
+                        <span class="material-icons-sharp">dark_mode</span>
+                    </div>
+                    <div class="profile">
+                        <div class="profile-photo">
+                            <img src="./images/logo.png" alt="">
+                        </div>
+                        <h5>Arnaldo Domingos</h5>
+                        <span class="material-icons-sharp more-info">expand_more</span>
+                        <button id="button-menu">
+                            <span class="material-icons-sharp">menu</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--END NAVBAR-->
+
+        <main class="container">
+            <aside>
+                <button id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </button>
+                <div class="sidebar">
+                    <a href="index.html">
+                        <span class="material-icons-sharp ">dashboard</span>
+                        <h4>Dasboard</h4>
+                    </a>
+                    <a href="estudantes.html" class="active">
+                        <span class="material-icons-sharp">group</span>
+                        <h4>Estudantes</h4>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">home</span>
+                        <h4>Turmas</h4>
+                    </a>
+                    <a href="professores.html">
+                        <span class="material-icons-sharp">group</span>
+                        <h4>Professores</h4>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">wallet</span>
+                        <h4>Cursos</h4>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">help</span>
+                        <h4>Help Center</h4>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">message</span>
+                        <h4>Messages</h4>
+                    </a>
+                </div>
+                <!--END SIDE BAR-->
+
+            </aside>
+            <!-- END ASIDE -->
+            <section class="middle">
+                <div class="list-view">
+                    <div class="header">
+                        <h1>Listas de Model</h1>
+                    </div>
+                    <div class="list-body">
+                        <div class="filter-area">
+                            <div class="search-area">
+                                <span class="material-icons-sharp">search</span>
+                                <input type="search" name="" id="">
+                            </div>
+                            <div class="order-area">
+                                <h3>Ordenar por:
+                                </h3>
+                                <div class="order">
+                                    <select name="" id="">
+                                        <option value="">Nome</option>
+                                        <option value="">Idade</option>
+                                        <option value="">Sexo</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="export-area">
+                                <div class="export-item">
+                                    <button>CSV</button>
+                                </div>
+                                <div class="export-item">
+                                    <button>PDF</button>
+                                </div>
+                                <div class="export-item">
+                                    <button>WORD</button>
+                                </div>
+                                <div class="export-item">
+                                    <button>PRINT</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="list-header">
+                            <h3 class="th-name">Nome</h3>
+                            <h3>BI</h3>
+                            <h3>Data de Nascimento</h3>
+                            <h3>Sexo</h3>
+                            <h3>Turma</h3>
+                            <h3>Classe</h3>
+                            <h3>Estado</h3>
+                        </div>
+                        <div class="model-name">
+                            <h4 class="name">Arnaldo Domingos</h4>
+                            <p>
+                                006084950BA045</p>
+                            <p class="text-muted">02-09-1996</p>
+                            <p class="text-muted">Masculino</p>
+                            <p class="text-muted">Unica</p>
+                            <p class="text-muted">3º Ano</p>
+                            <div class="status">
+                                <p class="status-success">Regulado</p>
+                            </div>
+                        </div>
+                        <!-- END ROW MODEL-NAME-->
+                        <div class="model-name">
+                            <h4 class="name">Arnaldo Domingos</h4>
+                            <p>
+                                006084950BA045</p>
+                            <p class="text-muted">02-09-1996</p>
+                            <p class="text-muted">Masculino</p>
+                            <p class="text-muted">Unica</p>
+                            <p class="text-muted">3º Ano</p>
+                            <div class="status">
+                                <p class="status-success">Regulado</p>
+                            </div>
+                        </div>
+                        <!-- END ROW MODEL-NAME-->
+                        <div class="model-name">
+                            <h4 class="name">Arnaldo Domingos</h4>
+                            <p>
+                                006084950BA045</p>
+                            <p class="text-muted">02-09-1996</p>
+                            <p class="text-muted">Masculino</p>
+                            <p class="text-muted">Unica</p>
+                            <p class="text-muted">3º Ano</p>
+                            <div class="status">
+                                <p class="status-danger">Divida</p>
+                            </div>
+                        </div>
+                        <!-- END ROW MODEL-NAME-->
+                        <div class="model-name">
+                            <h4 class="name">Arnaldo Domingos</h4>
+                            <p class="text-muted">006084950BA045</p>
+                            <p class="text-muted">02-09-1996</p>
+                            <p class="text-muted">Masculino</p>
+                            <p class="text-muted">Unica</p>
+                            <p class="text-muted">3º Ano</p>
+                            <div class="status">
+                                <p class="status-purple">Pendente</p>
+                            </div>
+                        </div>
+                        <!-- END ROW MODEL-NAME-->
+                        <div class="model-name">
+                            <h4 class="name">Arnaldo Domingos</h4>
+                            <p>
+                                006084950BA045</p>
+                            <p class="text-muted">02-09-1996</p>
+                            <p class="text-muted">Masculino</p>
+                            <p class="text-muted">Unica</p>
+                            <p class="text-muted">3º Ano</p>
+                            <div class="status">
+                                <p class="status-success">Regulado</p>
+                            </div>
+                        </div>
+                        <!-- END ROW MODEL-NAME-->
+                        <div class="model-name">
+                            <h4 class="name">Arnaldo Domingos</h4>
+                            <p>
+                                006084950BA045</p>
+                            <p class="text-muted">02-09-1996</p>
+                            <p class="text-muted">Masculino</p>
+                            <p class="text-muted">Unica</p>
+                            <p class="text-muted">3º Ano</p>
+                            <div class="status">
+                                <p class="status-danger">Divida</p>
+                            </div>
+                        </div>
+                        <!-- END ROW MODEL-NAME-->
+                    </div>
+                    <!--END LIST BODY-->
+                    <div class="list-footer">
+                        <div class="left">
+                            <p>
+                                Pagina 2 -
+                                <span>5</span>
+                                de
+                                <span>200</span>
+                                Elementos</p>
+                        </div>
+                        <div class="right">
+                            <div class="pagination">
+                                <button>
+                                    <</button>
+                                        <button>1</button>
+                                        <button class="active">2</button>
+                                        <button>3</button>
+                                        <button>4</button>
+                                        <button>5</button>
+                                        <button>></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END LIST FOOTER-->
+
+                        </div>
+                        <!-- END LIST VIEW-->
+
+                    </section>
+                    <!-- END MIDDLE -->
+                </main>
+                <!-- ======================== END MAIN =======================================-->
+
+                <!-- SCRIPTS-->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js" integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                <script src="./main.js"></script>
+            </body>
+        </html>
+    </body>
+</html>

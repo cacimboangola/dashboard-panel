@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <!--MATERIAL ICONS-->
+        <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+        <!--GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!--StyleSheet-->
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+
+        <nav>
+            <div class="container">
+                <img src="./images/logo.png" alt="CACIMBO" class="logo">
+                <div class="search-bar">
+                    <span class="material-icons-sharp">search</span>
+                    <input type="search" name="" id="" placeholder="Pesquisar">
+                </div>
+                <div class="profile-area">
+                    <div class="theme-btn">
+                        <span class="material-icons-sharp active">light_mode</span>
+                        <span class="material-icons-sharp">dark_mode</span>
+                    </div>
+                    <div class="profile">
+                        <div class="profile-photo">
+                            <img src="./images/logo.png" alt="">
+                        </div>
+                        <h5>Arnaldo Domingos</h5>
+                        <span class="material-icons-sharp more-info">expand_more</span>
+                        <button id="button-menu">
+                            <span class="material-icons-sharp">menu</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--END NAVBAR-->
+
+        <main>
+            <aside>
+                <button id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </button>
+                <div class="sidebar">
+                    <a href="index.html" class="active">
+                        <span class="material-icons-sharp ">dashboard</span>
+                        <h4>Dasboard</h4>
+                    </a>
+                    <a href="estudantes.html">
+                        <span class="material-icons-sharp">group</span>
+                        <h4>Estudantes</h4>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">home</span>
+                        <h4>Turmas</h4>
+                    </a>
+                    <a href="professores.html">
+                        <span class="material-icons-sharp">group</span>
+                        <h4>Professores</h4>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">wallet</span>
+                        <h4>Cursos</h4>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">help</span>
+                        <h4>Help Center</h4>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">message</span>
+                        <h4>Messages</h4>
+                    </a>
+                </div>
+                <!--END SIDE BAR-->
+
+            </aside>
+            <!-- END ASIDE -->
+            <section class="middle">
+                <div class="header">
+                    <h1>Resumo</h1>
+                    <input type="date" name="" id="">
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="top">
+                            <div class="left">
+                                <span class="material-icons-sharp">group</span>
+                                <h2>Estudantes</h2>
+                            </div>
+                        </div>
+                        <div class="middle">
+                            <h1>300</h1>
+                        </div>
+                        <div class="bottom">
+                            <div class="left">
+                                <h5>Arnaldo</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- END CARD -->
+                    <div class="card">
+                        <div class="top">
+                            <div class="left">
+                                <span class="material-icons-sharp">message</span>
+                                <h2>Mensagens</h2>
+                            </div>
+                        </div>
+                        <div class="middle">
+                            <h1>300</h1>
+                        </div>
+                        <div class="bottom">
+                            <div class="left">
+                                <h5>Arnaldo</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- END CARD -->
+                    <div class="card">
+                        <div class="top">
+                            <div class="left">
+                                <span class="material-icons-sharp">group</span>
+                                <h2>Professores</h2>
+                            </div>
+                        </div>
+                        <div class="middle">
+                            <h1>300</h1>
+                        </div>
+                        <div class="bottom">
+                            <div class="left">
+                                <h5>Arnaldo</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- END CARD -->
+                </div>
+                <!-- END CARDS -->
+
+                <div class="monthly-report">
+                    <div class="report">
+                        <h3>Propinas</h3>
+                        <div>
+                            <details>
+                                <h1>AOA 3.000.000,00
+                                </h1>
+                                <h6 class="success">+50%</h6>
+                            </details>
+                            <p class="text-muted">Em relação ao mês anterior</p>
+                        </div>
+                    </div>
+                    <!-- END PROPINAS REPORT -->
+                    <div class="report">
+                        <h3>Inscrições</h3>
+                        <div>
+                            <details>
+                                <h1>AOA 250.000,00
+                                </h1>
+                                <h6 class="success">+50%</h6>
+                            </details>
+                            <p class="text-muted">Em relação ao mês anterior</p>
+                        </div>
+                    </div>
+                    <!-- END INSCRIÇÕES REPORT -->
+                    <div class="report">
+                        <h3>Despesas</h3>
+                        <div>
+                            <details>
+                                <h1>AOA 300.000,00
+                                </h1>
+                                <h6 class="danger">+50%</h6>
+                            </details>
+                            <p class="text-muted">Em relação ao mês anterior</p>
+                        </div>
+                    </div>
+                    <!-- END DESPESAS REPORT -->
+                    <div class="report">
+                        <h3>Receitas</h3>
+                        <div>
+                            <details>
+                                <h1>AOA 40.000,00
+                                </h1>
+                                <h6 class="success">+50%</h6>
+                            </details>
+                            <p class="text-muted">Em relação ao mês anterior</p>
+                        </div>
+                    </div>
+                    <!-- END RECEITAS REPORT -->
+                </div>
+                <!-- END MONTHLY REPORT -->
+
+                <canvas id="chart"></canvas>
+                <!-- END CHARTS-->
+
+                <div class="list-view">
+                    <div class="header">
+                        <h1>Listas de Model</h1>
+                    </div>
+                    <div class="list-body">
+                        <div class="list-header">
+                            <h3 class="th-name">Nome</h3>
+                            <h3>BI</h3>
+                            <h3>Data de Nascimento</h3>
+                            <h3>Sexo</h3>
+                            <h3>Turma</h3>
+                            <h3>Classe</h3>
+                            <h3>Estado</h3>
+                        </div>
+                        <div class="model-name">
+                            <h4 class="name">Arnaldo Domingos</h4>
+                            <p>
+                                006084950BA045</p>
+                            <p class="text-muted">02-09-1996</p>
+                            <p class="text-muted">Masculino</p>
+                            <p class="text-muted">Unica</p>
+                            <p class="text-muted">3º Ano</p>
+                            <div class="status">
+                                <p class="status-success">Regulado</p>
+                            </div>
+                        </div>
+                        <!-- END ROW MODEL-NAME-->
+                        <div class="model-name">
+                            <h4 class="name">Arnaldo Domingos</h4>
+                            <p>
+                                006084950BA045</p>
+                            <p class="text-muted">02-09-1996</p>
+                            <p class="text-muted">Masculino</p>
+                            <p class="text-muted">Unica</p>
+                            <p class="text-muted">3º Ano</p>
+                            <div class="status">
+                                <p class="status-success">Regulado</p>
+                            </div>
+                        </div>
+                        <!-- END ROW MODEL-NAME-->
+                        <div class="model-name">
+                            <h4 class="name">Arnaldo Domingos</h4>
+                            <p>
+                                006084950BA045</p>
+                            <p class="text-muted">02-09-1996</p>
+                            <p class="text-muted">Masculino</p>
+                            <p class="text-muted">Unica</p>
+                            <p class="text-muted">3º Ano</p>
+                            <div class="status">
+                                <p class="status-danger">Divida</p>
+                            </div>
+                        </div>
+                        <!-- END ROW MODEL-NAME-->
+                        <div class="model-name">
+                            <h4 class="name">Arnaldo Domingos</h4>
+                            <p class="text-muted">006084950BA045</p>
+                            <p class="text-muted">02-09-1996</p>
+                            <p class="text-muted">Masculino</p>
+                            <p class="text-muted">Unica</p>
+                            <p class="text-muted">3º Ano</p>
+                            <div class="status">
+                                <p class="status-purple">Pendente</p>
+                            </div>
+                        </div>
+                        <!-- END ROW MODEL-NAME-->
+                        <div class="model-name">
+                            <h4 class="name">Arnaldo Domingos</h4>
+                            <p>
+                                006084950BA045</p>
+                            <p class="text-muted">02-09-1996</p>
+                            <p class="text-muted">Masculino</p>
+                            <p class="text-muted">Unica</p>
+                            <p class="text-muted">3º Ano</p>
+                            <div class="status">
+                                <p class="status-success">Regulado</p>
+                            </div>
+                        </div>
+                        <!-- END ROW MODEL-NAME-->
+                        <div class="model-name">
+                            <h4 class="name">Arnaldo Domingos</h4>
+                            <p>
+                                006084950BA045</p>
+                            <p class="text-muted">02-09-1996</p>
+                            <p class="text-muted">Masculino</p>
+                            <p class="text-muted">Unica</p>
+                            <p class="text-muted">3º Ano</p>
+                            <div class="status">
+                                <p class="status-danger">Divida</p>
+                            </div>
+                        </div>
+                        <!-- END ROW MODEL-NAME-->
+
+                    </div>
+
+                </div>
+                <!-- END LIST VIEW-->
+
+            </section>
+            <!-- END MIDDLE -->
+
+            <section class="right">
+                <div class="last-payments">
+                    <div class="header">
+                        <h2>Ultimos Pagamentos</h2>
+                        <a href="">Ver mais
+                            <span class="material-icons-sharp">chevron_right</span>
+                        </a>
+                    </div>
+                    <div class="last-payment">
+                        <img src="./images/logo.png" alt="">
+                        <h4>
+                            Arnaldo</h4>
+                        <div class="date-time">
+                            <p>05-07-2022</p>
+                            <small class="text-muted">9:23</small>
+                        </div>
+                        <div class="bonds">
+                            <p>1200</p>
+                            <small class="text-muted">kzs</small>
+                        </div>
+                        <div class="amount">
+                            <h4>AOA 200.000,00</h4>
+                            <small class="danger">-45%</small>
+                        </div>
+                    </div>
+                    <!-- END PAYMENT -->
+                    <div class="last-payment">
+                        <img src="./images/logo.png" alt="">
+                        <h4>
+                            Arnaldo</h4>
+                        <div class="date-time">
+                            <p>05-07-2022</p>
+                            <small class="text-muted">9:23</small>
+                        </div>
+                        <div class="bonds">
+                            <p>1200</p>
+                            <small class="text-muted">kzs</small>
+                        </div>
+                        <div class="amount">
+                            <h4>AOA 200.000,00</h4>
+                            <small class="danger">-45%</small>
+                        </div>
+                    </div>
+                    <!-- END PAYMENT -->
+                    <div class="last-payment">
+                        <img src="./images/logo.png" alt="">
+                        <h4>
+                            Arnaldo</h4>
+                        <div class="date-time">
+                            <p>05-07-2022</p>
+                            <small class="text-muted">9:43</small>
+                        </div>
+                        <div class="bonds">
+                            <p>1200</p>
+                            <small class="text-muted">kzs</small>
+                        </div>
+                        <div class="amount">
+                            <h4>AOA 200.000,00</h4>
+                            <small class="danger">-45%</small>
+                        </div>
+                    </div>
+                    <!-- END PAYMENT -->
+                    <div class="last-payment">
+                        <img src="./images/logo.png" alt="">
+                        <h4>
+                            Arnaldo</h4>
+                        <div class="date-time">
+                            <p>05-07-2022</p>
+                            <small class="text-muted">9:23</small>
+                        </div>
+                        <div class="bonds">
+                            <p>1200</p>
+                            <small class="text-muted">kzs</small>
+                        </div>
+                        <div class="amount">
+                            <h4>AOA 200.000,00</h4>
+                            <small class="danger">-45%</small>
+                        </div>
+                    </div>
+                    <!-- END PAYMENT -->
+                </div>
+                <!-- END LAST PAYMENTS -->
+            </section>
+            <!-- END RIGHT -->
+        </main>
+        <!-- ======================== END MAIN =======================================-->
+        <div class="list">
+            <div></div>
+            <div class="list-view">
+                <div class="header">
+                    <h1>Listas de Model</h1>
+                </div>
+                <div class="list-body">
+                    <div class="list-header">
+                        <h3 class="th-name">Nome</h3>
+                        <h3>BI</h3>
+                        <h3>Data de Nascimento</h3>
+                        <h3>Sexo</h3>
+                        <h3>Turma</h3>
+                        <h3>Classe</h3>
+                        <h3>Estado</h3>
+                    </div>
+                    <div class="model-name">
+                        <h4 class="name">Arnaldo Domingos</h4>
+                        <p>
+                            006084950BA045</p>
+                        <p class="text-muted">02-09-1996</p>
+                        <p class="text-muted">Masculino</p>
+                        <p class="text-muted">Unica</p>
+                        <p class="text-muted">3º Ano</p>
+                        <div class="status">
+                            <p class="status-success">Regulado</p>
+                        </div>
+                    </div>
+                    <!-- END ROW MODEL-NAME-->
+                    <div class="model-name">
+                        <h4 class="name">Arnaldo Domingos</h4>
+                        <p>
+                            006084950BA045</p>
+                        <p class="text-muted">02-09-1996</p>
+                        <p class="text-muted">Masculino</p>
+                        <p class="text-muted">Unica</p>
+                        <p class="text-muted">3º Ano</p>
+                        <div class="status">
+                            <p class="status-success">Regulado</p>
+                        </div>
+                    </div>
+                    <!-- END ROW MODEL-NAME-->
+                    <div class="model-name">
+                        <h4 class="name">Arnaldo Domingos</h4>
+                        <p>
+                            006084950BA045</p>
+                        <p class="text-muted">02-09-1996</p>
+                        <p class="text-muted">Masculino</p>
+                        <p class="text-muted">Unica</p>
+                        <p class="text-muted">3º Ano</p>
+                        <div class="status">
+                            <p class="status-danger">Divida</p>
+                        </div>
+                    </div>
+                    <!-- END ROW MODEL-NAME-->
+                    <div class="model-name">
+                        <h4 class="name">Arnaldo Domingos</h4>
+                        <p class="text-muted">006084950BA045</p>
+                        <p class="text-muted">02-09-1996</p>
+                        <p class="text-muted">Masculino</p>
+                        <p class="text-muted">Unica</p>
+                        <p class="text-muted">3º Ano</p>
+                        <div class="status">
+                            <p class="status-purple">Pendente</p>
+                        </div>
+                    </div>
+                    <!-- END ROW MODEL-NAME-->
+                    <div class="model-name">
+                        <h4 class="name">Arnaldo Domingos</h4>
+                        <p>
+                            006084950BA045</p>
+                        <p class="text-muted">02-09-1996</p>
+                        <p class="text-muted">Masculino</p>
+                        <p class="text-muted">Unica</p>
+                        <p class="text-muted">3º Ano</p>
+                        <div class="status">
+                            <p class="status-success">Regulado</p>
+                        </div>
+                    </div>
+                    <!-- END ROW MODEL-NAME-->
+                    <div class="model-name">
+                        <h4 class="name">Arnaldo Domingos</h4>
+                        <p>
+                            006084950BA045</p>
+                        <p class="text-muted">02-09-1996</p>
+                        <p class="text-muted">Masculino</p>
+                        <p class="text-muted">Unica</p>
+                        <p class="text-muted">3º Ano</p>
+                        <div class="status">
+                            <p class="status-danger">Divida</p>
+                        </div>
+                    </div>
+                    <!-- END ROW MODEL-NAME-->
+
+                </div>
+
+            </div>
+            <!-- END LIST VIEW-->
+        </div>
+
+        <!-- SCRIPTS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js" integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./main.js"></script>
+    </body>
+</html>

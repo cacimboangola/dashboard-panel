@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <!--MATERIAL ICONS-->
+        <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+        <!--GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!--StyleSheet-->
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+
+        <nav>
+            <div class="container">
+                <img src="./images/logo.png" alt="CACIMBO" class="logo">
+                <div class="search-bar">
+                    <span class="material-icons-sharp">search</span>
+                    <input type="search" name="" id="" placeholder="Pesquisar">
+                </div>
+                <div class="profile-area">
+                    <div class="theme-btn">
+                        <span class="material-icons-sharp active">light_mode</span>
+                        <span class="material-icons-sharp">dark_mode</span>
+                    </div>
+                    <div class="profile">
+                        <div class="profile-photo">
+                            <img src="./images/logo.png" alt="">
+                        </div>
+                        <h5>Arnaldo Domingos</h5>
+                        <span class="material-icons-sharp more-info">expand_more</span>
+                        <button id="button-menu">
+                            <span class="material-icons-sharp">menu</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--END NAVBAR-->
+
+        <main class="container">
+            <aside>
+                <button id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </button>
+                <div class="sidebar">
+                    <a href="index.html">
+                        <span class="material-icons-sharp ">dashboard</span>
+                        <h4>Dasboard</h4>
+                    </a>
+                    <a href="estudantes.html" >
+                        <span class="material-icons-sharp">group</span>
+                        <h4>Estudantes</h4>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">home</span>
+                        <h4>Turmas</h4>
+                    </a>
+                    <a href="professores.html" class="active">
+                        <span class="material-icons-sharp">group</span>
+                        <h4>Professores</h4>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">wallet</span>
+                        <h4>Cursos</h4>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">help</span>
+                        <h4>Help Center</h4>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">message</span>
+                        <h4>Messages</h4>
+                    </a>
+                </div>
+                <!--END SIDE BAR-->
+
+            </aside>
+            <!-- END ASIDE -->
+            <section class="middle">
+                <div class="form-insert" style="background-color: red; width: 90vw; height: 100%;">
+                    <div class="personal-information" style="background-color: green; width: 90vw; height: 100%;">
+
+
+                    </div>
+                </div>
+                
+
+            </section>
+            <!-- END MIDDLE -->
+        </main>
+        <!-- ======================== END MAIN =======================================-->
+
+        <!-- SCRIPTS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js" integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./main.js"></script>
+    </body>
+</html></body></html>

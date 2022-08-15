@@ -1,0 +1,700 @@
+/*ROOT VARIABLES*/
+:root{
+    --color-white:#ffffff;
+    --color-light:#f0eff5;
+    --color-gray-light:#86848c;
+    --color-gray-dark:#56555e;
+    --color-dark:#27282f;
+    --color-primary:rgb(71,7,234);
+    --color-success:rgb(34,202,75);
+    --color-danger:rgb(255,67,54);
+    --color-warning:rgb(234,181,7);
+    --color-purple:rgb(160,99,245);
+
+    --color-primary-light:rgb(71,7,234,0.2);
+    --color-success-light:rgb(34,202,75, 0.2);
+    --color-danger-light:rgb(255,67,54,0.2);
+    --color-purple-light:rgb(160,99,245,0.2);
+
+    --card-padding:1.6rem;
+    --padding-1:1rem;
+    --padding-2:8px;
+
+
+    --card-border-radius: 1.6rem;
+    --border-radius-1:1rem;
+    --border-radius-2:6px;
+}
+
+*{
+    margin: 0;
+    padding: 0; 
+    outline: 0;
+    border: 0;
+    appearance: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html{
+    font-size: 12px;
+}
+body{
+    background: var(--color-light);
+    font-family: poppin, sans-serif;
+    min-height: 100vh;
+    color: var(--color-dark); 
+}
+img{
+    width: 100%;
+}
+h1{
+    font-size: 2.2rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1.2rem;
+}
+h4{
+    font-size: 1rem;
+}
+h5{
+    font-size: 0.86rem;
+    font-weight: 500;
+}
+h6{
+    font-size: 0.6rem;
+}
+p{
+font-size: 00.86rem;
+color: var(--color-gray-dark);
+}
+small{
+    font-weight: 300;
+    font-size: 0.77rem;
+}
+.text-muted{
+    color:var(--color-gray-light);
+}
+.primary{
+    color: var(--color-primary);
+}
+
+.danger{
+    color: var(--color-danger);
+}
+
+.success{
+    color: var(--color-success);
+}
+
+.purple{
+    color: var(--color-purple);
+}
+
+.warning{
+    color: var(--color-warning);
+}
+
+.bg-primary{
+    background: var(--color-primary);
+    box-shadow: 0 0.8rem 0 0.8rem var(--color-primary-light);
+}
+
+.bg-danger{
+    background: var(--color-danger);
+    box-shadow: 0 0.8rem 0 0.8rem var(--color-danger-light);
+}
+
+.bg-success{
+    background: var(--color-success);
+    box-shadow: 0 0.8rem 0 0.8rem var(--color-success-light);
+}
+
+.bg-purple{
+    background: var(--color-purple);
+    box-shadow: 0 0.8rem 0 0.8rem var(--color-purple-light);
+}
+
+.bg-warning{
+    background: var(--color-warning);
+}
+.bg-dark{
+    background: var(--color-dark);
+    box-shadow: 0 0.8rem 0 0.8rem rgb(0, 0, 0,0.2);
+}
+
+/*================ NAV BAR STYLE ======================*/
+
+nav{
+    width: 100%;
+    background: var(--color-white);
+    padding: 1rem 0;
+}
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 96%;
+    margin: 0 auto;  
+}
+nav img.logo{
+    width: 7rem;
+}
+nav .search-bar{
+    background: var(--color-light);
+    padding: var(--padding-2) var(--card-padding);
+    width: 32vw;
+    border-radius: var(--border-radius-2);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--color-gray-light);
+    position: absolute;
+    left: 15%;
+}
+nav .search-bar input[type="search"]{
+color: var(--color-dark);
+background: transparent;
+width: 100%;
+}
+nav .search-bar input[type="search"]::placeholder{
+    color: var(--color-gray-dark);
+}
+nav .profile-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+nav .profile-area .theme-btn{
+    display: flex;
+    background: var(--color-light);
+    width: 5rem;
+    height: 2rem;
+    border-radius: var(--border-radius-2);
+    cursor: pointer;
+}
+nav .profile-area .theme-btn span{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+nav .profile-area .theme-btn .active{
+    background: var(--color-dark);
+    border-radius: var(--border-radius-2);
+    color: var(--color-white);
+}
+nav .profile-area .profile{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+nav .profile-area .profile .more-info{
+    cursor: pointer;
+}
+
+nav .profile-area .profile-photo{
+   display: block; 
+   width: 3rem;
+   height: 3rem;
+   border-radius: 50%;
+   overflow: hidden;
+}
+nav .profile-area button{
+    display: none ; 
+}
+
+/* ============================== ASIDE & SIDEBAR ============================ */
+main{
+    display: grid;
+    grid-template-columns: 16rem auto 30rem;
+    gap: 2rem;
+    width: 96%;
+    margin: 1rem auto 4rem;
+
+}
+main aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 88vh;
+}
+/* Only be showed on Mobile and table*/
+main aside button#close-btn{
+   display: none; 
+}
+main aside .sidebar a{
+    display: flex;
+    gap: 1.2rem;
+    height: 4.7rem;
+    align-items: center;
+    color: var(--color-gray-light);
+    position: relative;
+
+}
+
+main aside .sidebar a span{
+    font-size: 1.7rem;
+    margin-left: 3rem;
+    transition: all 300ms ease;
+}
+
+main aside .sidebar a.active{
+    background: var(--color-white);
+    color: var(--color-primary);
+}
+main aside .sidebar a.active:before{
+   content: "";
+   width: 6px;
+   height: 100%;
+   position: absolute;
+   background: var(--color-primary);
+}
+main aside .sidebar a:hover{
+    color: var(--color-primary);
+}
+main aside .sidebar a:hover span{
+    margin-left: 2rem;
+}
+main aside .sidebar h4{
+    font-weight: 500;
+}
+
+/* ============================== MIDDLE ============================ */
+main section.middle .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+main section.middle .header input[type="date"]{
+    padding: 0.5rem 2rem;
+    border-radius: var(--border-radius-2);
+    background: var(--color-white);
+    color: var(--color-gray-dark);
+}
+main section.middle .cards{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+main section.middle .cards .card{
+    background: linear-gradient(#ff796f, #bd261b);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    color: white;
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2rem 3rem var(--color-danger-light);
+    transition: all 300ms ease;
+    min-width: 22rem;
+}
+main section.middle .cards .card:hover{
+    box-shadow: none;
+}
+main section.middle .cards .card:nth-child(2){
+    background: linear-gradient(#7f8191, #27282f);
+    box-shadow: 0 2rem 3rem rgb(0, 0, 0,0.2);
+}
+main section.middle .cards .card:nth-child(3){
+    background: linear-gradient(#5d70ff, #5719c2);
+    box-shadow: 0 2rem 3rem var(--color-primary-light);
+}
+main section.middle .cards .card:hover{
+    box-shadow: none;
+}
+main section.middle .card .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main section.middle .card .top .left{
+    display: flex;
+    gap: 0.5rem;
+}
+main section.middle .card .top .left h2{
+    font-weight: 200;
+    font-size: 1.4rem;
+}
+
+main section.middle .card .top .left span{
+    width: 2.3rem;
+    height: 2.3rem;
+    border: 1px solid white;
+    border-radius: var(--border-radius-2);
+    padding: 0,4rem;
+}
+
+main section.middle .card .top img.right{
+    width: 3.5rem;
+}
+main section.middle .card .middle{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*================================ MONTHLY REPORT ===================================== */
+
+main .monthly-report{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+main .monthly-report h1{
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+/*================================ CANVAS  ===================================== */
+canvas#chart{
+    background: var(--color-white);
+    max-width: 100%;
+    margin-top: 2rem;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding );
+}
+/*================================ LIST VIEW  ===================================== */
+main .list-view{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+main  .list-view .list-body{
+    display: grid;
+    background: var(--color-white);
+    border-radius: var(--border-radius-2);
+}
+main  .list-view .list-body .list-header{
+    display: grid;
+    grid-template-columns: 1.5fr repeat(6, 1fr);
+    padding: var(--card-padding);
+    border-bottom: 1px solid var(--color-light);
+    background: var(--color-dark);
+    color: var(--color-light);
+    border-radius: var(--border-radius-2);
+    align-items: center;
+}
+main  .list-view .list-body  .model-name{
+    display: grid;
+    grid-template-columns: 1.5fr repeat(6, 1fr);
+    padding: var(--card-padding);
+    border-bottom: 1px solid var(--color-light);
+    align-items: center;
+}
+main  .list-view .list-body  .model-name .status p{
+    color:var(--color-white);
+    text-align: center;
+}
+main  .list-view .list-body  .model-name .status p.status-success{
+    background: var(--color-success);
+    border-radius: var(--card-border-radius);
+    padding: 0.2rem;
+    
+}
+main  .list-view .list-body  .model-name .status p.status-danger{
+    background: var(--color-danger);
+    border-radius: var(--card-border-radius);
+    padding: 0.2rem;
+}
+main  .list-view .list-body  .model-name .status p.status-purple{
+    background: var(--color-purple);
+    border-radius: var(--card-border-radius);
+    padding: 0.2rem;
+    
+}
+
+main  .list-view .list-body .model-name:last-child{
+    border: none;
+}
+ 
+/*================================ PAYMENTS  ===================================== */
+main section.right .last-payments{
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+}
+
+main section.right .last-payments img{
+    width: 2.4rem;
+}
+
+main section.right .last-payments .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--card-padding);
+    padding-bottom: 0;
+}
+
+main section.right .last-payments .header a{
+    display: flex;
+    align-items: center;
+    color: var(--color-primary);
+}
+
+main section.right .last-payments .last-payment{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--card-padding);
+    border-bottom: 1px solid var(--color-light);
+    transition: all 300ms ease;
+}
+main section.right .last-payments .last-payment:last-child{
+    border: none;
+}
+
+main section.right .last-payments .last-payment:hover{
+    background: var(--color-light);
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*=================Table================================*/
+.list{
+    display: grid;
+    grid-template-columns: 16rem auto;
+    gap: 2rem;
+    width: 96%;
+    margin: 1rem auto 4rem;
+}
+.list .list-view .list-body{
+    display: grid;
+    background: var(--color-white);
+    border-radius: var(--border-radius-2);
+}
+.list .list-view .list-body .list-header{
+    display: grid;
+    grid-template-columns: 1.5fr repeat(6, 1fr);
+    padding: var(--card-padding);
+    border-bottom: 1px solid var(--color-light);
+    background: var(--color-dark);
+    color: var(--color-light);
+    border-radius: var(--border-radius-2);
+    align-items: center;
+}
+.list .list-view .list-body  .model-name{
+    display: grid;
+    grid-template-columns: 1.5fr repeat(6, 1fr);
+    padding: var(--card-padding);
+    border-bottom: 1px solid var(--color-light);
+    align-items: center;
+}
+.list  .list-view .list-body  .model-name .status p{
+    color:var(--color-white);
+    text-align: center;
+}
+.list .list-view .list-body  .model-name .status p.status-success{
+    background: var(--color-success);
+    border-radius: var(--card-border-radius);
+    padding: 0.2rem;
+    
+}
+.list .list-view .list-body  .model-name .status p.status-danger{
+    background: var(--color-danger);
+    border-radius: var(--card-border-radius);
+    padding: 0.2rem;
+}
+.list .list-view .list-body  .model-name .status p.status-purple{
+    background: var(--color-purple);
+    border-radius: var(--card-border-radius);
+    padding: 0.2rem;
+    
+}
+.list .list-view .list-body .model-name:last-child{
+    border: none;
+}
+
+
+/*================== Estudante =======================*/
+main.container{
+    display: grid;
+    grid-template-columns: 16rem auto;
+    gap: 2rem;
+    width: 100%;
+    margin: 1rem auto 4rem;
+
+}
+main.container .list-view{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+    width: 98%;
+}
+
+main.container  .list-view .list-body{
+    display: grid;
+    background: var(--color-white);
+    border-radius: var(--border-radius-2);
+    width: 100%;
+}
+main.container  .list-view .list-body .list-header{
+    display: grid;
+    grid-template-columns: 1.5fr repeat(6, 1fr);
+    padding: var(--card-padding);
+    border-bottom: 1px solid var(--color-light);
+    background: var(--color-dark);
+    color: var(--color-light);
+    border-radius: var(--border-radius-2);
+    align-items: center;
+}
+main.container  .list-view .list-body  .model-name{
+    display: grid;
+    grid-template-columns: 1.5fr repeat(6, 1fr);
+    padding: var(--card-padding);
+    border-bottom: 1px solid var(--color-light);
+    align-items: center;
+}
+main.container  .list-view .list-body  .model-name .status p{
+    color:var(--color-white);
+    text-align: center;
+}
+main.container  .list-view .list-body  .model-name:hover{
+    background: var(--color-light);
+    
+}
+
+main.container .list-view .list-body  .model-name .status p.status-success{
+    background: var(--color-success);
+    border-radius: var(--card-border-radius);
+    padding: 0.2rem;
+    
+}
+main.container .list-view .list-body  .model-name .status p.status-danger{
+    background: var(--color-danger);
+    border-radius: var(--card-border-radius);
+    padding: 0.2rem;
+}
+main.container .list-view .list-body  .model-name .status p.status-purple{
+    background: var(--color-purple);
+    border-radius: var(--card-border-radius);
+    padding: 0.2rem;
+    
+}
+main.container .list-view .list-body .model-name:last-child{
+    border: none;
+}
+main.container .list-view .list-footer{
+    display: flex;
+    justify-content: space-between;
+   align-items: center; 
+   width: 98%;
+}
+main.container .list-view .list-footer .right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main.container .list-view .list-footer .right button{
+    align-items: center;
+    background: var(--color-white);
+    /*padding: 0.50rem;*/
+    width: 32px;
+    height: 32px;
+    border-radius: var(--border-radius-2);
+    font-size: 1.2rem;
+    font-weight: 400;
+    border: 1px solid var(--color-primary-light);
+
+}
+main.container .list-view .list-footer .left p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+main.container .list-view .list-footer .left p span{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+main.container .list-view .list-footer .right button.active{
+    background: var(--color-primary);
+    color: var(--color-white);
+
+}
+main.container .list-view .list-body .filter-area{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+main.container .list-view .list-body .filter-area .search-area{
+    margin:1rem;
+    background: var(--color-light);
+    padding: var(--padding-2) var(--card-padding);
+    width: 20vw;
+    border-radius: var(--border-radius-2);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--color-gray-light);
+}
+
+main.container .list-view .list-body .filter-area .search-area input[type='search']{
+    background: transparent;
+    color: var(--color-gray-dark);
+}
+main.container .list-view .list-body .filter-area .order-area{
+    display: flex;
+    align-items: center;
+}
+main.container .list-view .list-body .filter-area .order{
+    margin:1rem;
+    background: var(--color-light);
+    padding: var(--padding-2) var(--card-padding);
+    width: 15vw;
+    border-radius: var(--border-radius-2);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--color-gray-light);
+}
+main.container .list-view .list-body .filter-area .order select{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+main.container .list-view .list-body .filter-area .export-area{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+main.container .list-view .list-body .filter-area .export-area .export-item{
+  padding: var(--padding-2);
+  background: var(--color-white);
+  border-radius: var(--border-radius-2);
+  box-shadow: 0 0.5rem .6rem rgba(0, 0, 0, 0.145);
+ 
+
+}
+main.container .list-view .list-body .filter-area .export-area .export-item button{
+    background: transparent;
+    color: var(--color-dark);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+ 
